@@ -9,6 +9,8 @@ import UIKit
 
 class ViewControllerP: UIViewController {
 
+    @IBAction func ventJournal(_ sender: Any) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

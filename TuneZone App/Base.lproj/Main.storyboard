@@ -16,6 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="take a breathe" translatesAutoresizingMaskIntoConstraints="NO" id="ad8-2C-AgR">
+                                <rect key="frame" x="-161" y="-280" width="791" height="1571"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&quot;Continuos improvment is better than delayed perfection&quot;                                             -  Mark Twain " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oFm-3T-buM">
                                 <rect key="frame" x="58" y="79" width="298" height="195"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -68,11 +72,10 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Journal">
                                     <backgroundConfiguration key="background" image="purple-transparent-background"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Kq5-2z-vZM" kind="show" id="Puq-TH-TvN"/>
+                                </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="take a breathe" translatesAutoresizingMaskIntoConstraints="NO" id="ad8-2C-AgR">
-                                <rect key="frame" x="-161" y="-202" width="740" height="1430"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -113,25 +116,70 @@
             <objects>
                 <viewController id="Kq5-2z-vZM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nqh-7Q-WJZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WTm-ae-SXq">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.75672447030000001" green="0.023040920350000001" blue="0.065633135640000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <items>
-                                    <navigationItem title="Journal" id="oYw-mg-Qvu"/>
-                                </items>
-                            </navigationBar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5a6-Mc-dHy">
+                                <rect key="frame" x="0.0" y="44" width="414" height="798"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Vv-3r-BFK">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="792"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="take a breathe" translatesAutoresizingMaskIntoConstraints="NO" id="WCU-id-ZZJ">
+                                                <rect key="frame" x="-162" y="-199" width="708" height="1168"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="58" translatesAutoresizingMaskIntoConstraints="NO" id="9TN-iV-iOT">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="58"/>
+                                            </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hc4-5o-69Y">
+                                                <rect key="frame" x="8" y="66" width="398" height="704"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="9TN-iV-iOT" firstAttribute="top" secondItem="7Vv-3r-BFK" secondAttribute="top" id="2Lb-8L-0ca"/>
+                                            <constraint firstAttribute="trailing" secondItem="WCU-id-ZZJ" secondAttribute="trailing" id="7sf-fO-gis"/>
+                                            <constraint firstItem="hc4-5o-69Y" firstAttribute="leading" secondItem="7Vv-3r-BFK" secondAttribute="leading" constant="35" id="Kby-SP-0HI"/>
+                                            <constraint firstItem="9TN-iV-iOT" firstAttribute="leading" secondItem="7Vv-3r-BFK" secondAttribute="leading" id="LX3-gg-hEd"/>
+                                            <constraint firstItem="WCU-id-ZZJ" firstAttribute="leading" secondItem="7Vv-3r-BFK" secondAttribute="leading" id="QFI-Eg-bck"/>
+                                            <constraint firstAttribute="trailing" secondItem="hc4-5o-69Y" secondAttribute="trailing" constant="27" id="av3-bw-egr"/>
+                                            <constraint firstAttribute="trailing" secondItem="9TN-iV-iOT" secondAttribute="trailing" id="bSB-cl-05Z"/>
+                                            <constraint firstItem="WCU-id-ZZJ" firstAttribute="top" secondItem="7Vv-3r-BFK" secondAttribute="top" id="eT0-Uk-VdY"/>
+                                            <constraint firstAttribute="bottom" secondItem="hc4-5o-69Y" secondAttribute="bottom" constant="450" id="n5k-JS-7WJ"/>
+                                            <constraint firstAttribute="bottom" secondItem="WCU-id-ZZJ" secondAttribute="bottom" id="ofL-bD-xws"/>
+                                            <constraint firstItem="hc4-5o-69Y" firstAttribute="top" secondItem="9TN-iV-iOT" secondAttribute="bottom" constant="36" id="rcB-Hy-m5Z"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="7Vv-3r-BFK" secondAttribute="bottom" id="3eY-Mn-zpM"/>
+                                    <constraint firstAttribute="trailing" secondItem="7Vv-3r-BFK" secondAttribute="trailing" id="7LG-DY-bLu"/>
+                                    <constraint firstItem="7Vv-3r-BFK" firstAttribute="top" secondItem="5a6-Mc-dHy" secondAttribute="top" id="JBe-PW-t1F"/>
+                                    <constraint firstItem="7Vv-3r-BFK" firstAttribute="width" secondItem="5a6-Mc-dHy" secondAttribute="width" id="Pv6-EH-6S7"/>
+                                    <constraint firstItem="7Vv-3r-BFK" firstAttribute="leading" secondItem="5a6-Mc-dHy" secondAttribute="leading" id="f8C-Gh-KrR"/>
+                                    <constraint firstItem="7Vv-3r-BFK" firstAttribute="height" secondItem="5a6-Mc-dHy" secondAttribute="height" priority="250" id="y7H-4c-AFg"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ehT-fW-ba0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5a6-Mc-dHy" firstAttribute="bottom" secondItem="ehT-fW-ba0" secondAttribute="bottom" id="6nD-jv-VFF"/>
+                            <constraint firstItem="5a6-Mc-dHy" firstAttribute="trailing" secondItem="ehT-fW-ba0" secondAttribute="trailing" id="AmS-tr-jS0"/>
+                            <constraint firstItem="5a6-Mc-dHy" firstAttribute="top" secondItem="ehT-fW-ba0" secondAttribute="top" id="IsX-H0-Rff"/>
+                            <constraint firstItem="5a6-Mc-dHy" firstAttribute="leading" secondItem="ehT-fW-ba0" secondAttribute="leading" id="Smk-a3-cgu"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Dmd-EB-86z"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="To9-6F-7pM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="731" y="750"/>
+            <point key="canvasLocation" x="730.43478260869574" y="750"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="R9R-fE-EGi">
@@ -477,6 +525,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="58" width="58" height="58"/>
         <image name="IMAGE MAN" width="512" height="512"/>
         <image name="IMAGE MAN 2" width="1024" height="1024"/>
         <image name="IMAGE OWMAN" width="512" height="512"/>
