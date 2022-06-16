@@ -128,13 +128,8 @@
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="take a breathe" translatesAutoresizingMaskIntoConstraints="NO" id="WCU-id-ZZJ">
                                                 <rect key="frame" x="-162" y="-199" width="708" height="1168"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="58" translatesAutoresizingMaskIntoConstraints="NO" id="9TN-iV-iOT">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="58"/>
-                                            </imageView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hc4-5o-69Y">
-                                                <rect key="frame" x="8" y="66" width="398" height="704"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="HIHIHIHIHI" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hc4-5o-69Y">
+                                                <rect key="frame" x="8" y="33" width="398" height="704"/>
                                                 <color key="textColor" systemColor="labelColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -142,17 +137,13 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="9TN-iV-iOT" firstAttribute="top" secondItem="7Vv-3r-BFK" secondAttribute="top" id="2Lb-8L-0ca"/>
                                             <constraint firstAttribute="trailing" secondItem="WCU-id-ZZJ" secondAttribute="trailing" id="7sf-fO-gis"/>
                                             <constraint firstItem="hc4-5o-69Y" firstAttribute="leading" secondItem="7Vv-3r-BFK" secondAttribute="leading" constant="35" id="Kby-SP-0HI"/>
-                                            <constraint firstItem="9TN-iV-iOT" firstAttribute="leading" secondItem="7Vv-3r-BFK" secondAttribute="leading" id="LX3-gg-hEd"/>
                                             <constraint firstItem="WCU-id-ZZJ" firstAttribute="leading" secondItem="7Vv-3r-BFK" secondAttribute="leading" id="QFI-Eg-bck"/>
                                             <constraint firstAttribute="trailing" secondItem="hc4-5o-69Y" secondAttribute="trailing" constant="27" id="av3-bw-egr"/>
-                                            <constraint firstAttribute="trailing" secondItem="9TN-iV-iOT" secondAttribute="trailing" id="bSB-cl-05Z"/>
                                             <constraint firstItem="WCU-id-ZZJ" firstAttribute="top" secondItem="7Vv-3r-BFK" secondAttribute="top" id="eT0-Uk-VdY"/>
                                             <constraint firstAttribute="bottom" secondItem="hc4-5o-69Y" secondAttribute="bottom" constant="450" id="n5k-JS-7WJ"/>
                                             <constraint firstAttribute="bottom" secondItem="WCU-id-ZZJ" secondAttribute="bottom" id="ofL-bD-xws"/>
-                                            <constraint firstItem="hc4-5o-69Y" firstAttribute="top" secondItem="9TN-iV-iOT" secondAttribute="bottom" constant="36" id="rcB-Hy-m5Z"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -179,7 +170,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="To9-6F-7pM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="730.43478260869574" y="750"/>
+            <point key="canvasLocation" x="725" y="788"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="R9R-fE-EGi">
@@ -507,7 +498,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="58" width="58" height="58"/>
         <image name="IMAGE MAN" width="512" height="512"/>
         <image name="IMAGE MAN 2" width="1024" height="1024"/>
         <image name="IMAGE OWMAN" width="512" height="512"/>
