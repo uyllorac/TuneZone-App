@@ -229,10 +229,10 @@
             </objects>
             <point key="canvasLocation" x="2221.739130434783" y="813.61607142857144"/>
         </scene>
-        <!--View Controller-->
+        <!--Playlist View Controller-->
         <scene sceneID="1vP-Tq-r5j">
             <objects>
-                <viewController id="xLi-ab-Sio" sceneMemberID="viewController">
+                <viewController id="xLi-ab-Sio" customClass="PlaylistViewController" customModule="TuneZone_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aGt-3p-uXU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -249,6 +249,9 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="You're the main character"/>
+                                <connections>
+                                    <action selector="happyPlaylist:" destination="xLi-ab-Sio" eventType="touchUpInside" id="a2m-cI-Lpa"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6t-AX-Dpw">
                                 <rect key="frame" x="21" y="277" width="374" height="55"/>
@@ -257,6 +260,9 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="POV: You wanna smash somebody's head"/>
+                                <connections>
+                                    <action selector="angryPlaylist:" destination="xLi-ab-Sio" eventType="touchUpInside" id="bDB-wL-sT0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2h-Bb-BbP">
                                 <rect key="frame" x="85" y="365" width="239" height="57"/>
@@ -265,6 +271,9 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Breathe, stop for a moment"/>
+                                <connections>
+                                    <action selector="calmPlaylist:" destination="xLi-ab-Sio" eventType="touchUpInside" id="NvZ-Gq-Tpr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g6L-zV-ukO">
                                 <rect key="frame" x="123" y="457" width="169" height="52"/>
@@ -273,6 +282,9 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="I need to feel"/>
+                                <connections>
+                                    <action selector="sadPlaylist:" destination="xLi-ab-Sio" eventType="touchUpInside" id="TUm-bV-l8n"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qq1-xH-dhe">
                                 <rect key="frame" x="78" y="542" width="252" height="55"/>
@@ -281,6 +293,9 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="a late night trip to the past"/>
+                                <connections>
+                                    <action selector="nostalgicPlaylist:" destination="xLi-ab-Sio" eventType="touchUpInside" id="Uo0-AW-Env"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQn-7t-7vL">
                                 <rect key="frame" x="113" y="631" width="182" height="45"/>
@@ -289,6 +304,9 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="struck by cupid"/>
+                                <connections>
+                                    <action selector="crushPlaylist:" destination="xLi-ab-Sio" eventType="touchUpInside" id="wRb-OD-VLj"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="947-9475523_tell-transparent-background-white-heart-transparent" translatesAutoresizingMaskIntoConstraints="NO" id="OAn-pZ-hxR">
                                 <rect key="frame" x="300" y="490" width="44" height="19"/>
@@ -497,8 +515,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="foR-jr-kq1"/>
-        <segue reference="Puq-TH-TvN"/>
+        <segue reference="UIt-uh-Bd7"/>
+        <segue reference="xno-Vt-cDG"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="219969" width="512" height="512"/>
